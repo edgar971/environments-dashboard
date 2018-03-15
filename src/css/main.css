@@ -1,3 +1,4 @@
+
 /**
  * Body CSS
  */
@@ -33,6 +34,73 @@
    list-style: none;
  }
 
+
+ /* Header */
+ .main-header {
+  text-align: center;
+  height: 120px;   
+  display: flex;
+  width: 100;
+  justify-content: center;
+  align-items: center;
+ }
+ .main-header h1 {
+   font-weight: bold;
+   padding: 0;
+   margin: 0;
+ }
+ .main-header h2 {
+  margin-top: 0;
+  color: rgb(211, 31, 31);
+}
+
+/* servers box */
+.servers-box {
+  display: inline;
+}
+.servers-box.size_v1 header {
+  width: 350px;
+}
+.servers-box.size_v2 header {
+  width: 500px;
+}
+.servers-box.mui-panel {
+  padding: 0;
+}
+.servers-box__header {
+  background: rgb(17, 179, 63);
+  padding: 5px 0px;
+}
+
+.servers-box__header h4 {
+  margin: 0;
+  color: white;
+  text-align: center;
+}
+
+.servers-box__content {
+  padding: 35px 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+
+
+/* Content */
+.main-content {
+  display: flex;
+  justify-content: space-between;
+  align-content: flex-start;
+  max-height: 85vh;
+  overflow-y: hidden;
+  overflow-x: scroll;
+}
+
+.main-content .servers-box {
+ 
+}
+
  /**
  * Sidebar CSS
  */
@@ -49,7 +117,7 @@
     bottom: 0;
     width: 180px;
     height: 100%;
-    padding-top: 30px;
+    padding-top: 120px;
   }
 }
 
