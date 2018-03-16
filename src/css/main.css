@@ -45,30 +45,30 @@
   align-items: center;
  }
  .main-header h1 {
+   color:#111111;
    font-weight: bold;
    padding: 0;
    margin: 0;
  }
  .main-header h2 {
   margin-top: 0;
-  color: rgb(211, 31, 31);
+  color: #FF4136;
+  font-weight: bold;
 }
 
 /* servers box */
-.servers-box {
-  display: inline;
+
+.servers-box.size_v1 {
+  width: 320px;
 }
-.servers-box.size_v1 header {
-  width: 350px;
-}
-.servers-box.size_v2 header {
+.servers-box.size_v2 {
   width: 500px;
 }
 .servers-box.mui-panel {
   padding: 0;
 }
 .servers-box__header {
-  background: rgb(17, 179, 63);
+  background: #3D9970;
   padding: 5px 0px;
 }
 
@@ -85,27 +85,26 @@
   justify-content: space-around;
 }
 
-
-
 /* Content */
 .main-content {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  align-content: flex-start;
-  max-height: 85vh;
-  overflow-y: hidden;
-  overflow-x: scroll;
 }
 
-.main-content .servers-box {
- 
+.main-content {
+  background-color: #fff;
+  min-width: 100%;
+  min-height: 200px;
+  display: flex
 }
+
 
  /**
  * Sidebar CSS
  */
 #sidebar {
-  background-color: rgb(242, 242, 242);
+  background-color: #DDDDDD;
   padding: 15px;
   text-align: center;
 }
